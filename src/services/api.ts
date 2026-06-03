@@ -1,7 +1,7 @@
 import axios, { type InternalAxiosRequestConfig } from 'axios';
 
 const API = axios.create({
-  baseURL: (import.meta.env.VITE_API_BASE_URL as string) || 'http://localhost:8080/api',
+  baseURL: (import.meta.env.VITE_API_BASE_URL as string) || 'http://localhost:8077/api',
   headers: {
     'Content-Type': 'application/json',
   },
