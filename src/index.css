@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Custom scrollbar adjustments to match our dark dashboard layout */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* Tailwind gray-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151; /* Tailwind gray-700 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Tailwind gray-600 */
+}
+
+/* Base resets to eliminate shifting or white flashes during route changes */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111827; /* Tailwind gray-900 baseline */
+  color: #ffffff;
+  overflow-x: hidden;
+}
