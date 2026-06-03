@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { FormEvent } from 'react'; 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 
 const Login: React.FC = () => {
@@ -115,6 +115,14 @@ const Login: React.FC = () => {
               )}
             </button>
           </div>
+          <div className="text-center mt-4">
+  <p className="text-sm text-gray-400">
+    New to the Academy portal?{' '}
+    <Link to="/register" className="font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+      Create an account
+    </Link>
+  </p>
+</div>
         </form>
       </div>
     </div>

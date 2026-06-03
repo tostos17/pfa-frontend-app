@@ -15,3 +15,13 @@ export interface ApiError {
   details: string;
   validationErrors?: Record<string, string> | null;
 }
+
+// Add this helper interface or include it in your auth types file
+export interface RegisterData {
+  email: string;
+  password_hash: string; // Matches backend naming convention
+  firstName: string;
+  lastName: string;
+  roleId: number; // 3 for PLAYER, 4 for PARENT, etc.
+}
+
